@@ -50,4 +50,29 @@ def euro():
       tmpStr += chr(element)    #and append the ASCII character for the ordinal value to the string
     print(tmpStr)   #print the flag! (HOPEFULLY)
 ```
-TO BE CONTINUED :)
+### 2. Reading in the input.txt-file and processing it:
+#### Last but not least, i have to read the operation instructions from the .txt file (which i will not upload here to make sure you at least have to do a little something <3) and create an if-statement to check  what to do with them:
+
+```python
+with open('input.txt') as file:     #get the file, for simplicity in the same path 
+  input = file.read()   #read the bytes from the file into a string
+  for c in input:   #now iterate through the characters and react accordingly (speaking for itself i think)
+    if c == '-':
+      dash()
+    elif c == '+':
+      plus()
+    elif c == '>':
+      arrowright()
+    elif c == '<':
+      arrowleft()
+    elif c == '@':
+      atsign()
+    elif c == '.':
+      dot()
+    elif c == '€':
+      euro()
+    
+    #print(stackarr)    <--- debugging only, in case you wanna see the ord values move back and forth!
+```
+
+#### That's all the code needed to solve this :) Please note that i am not a pro/super-experienced programmer/hacker. I'm doing this just for fun because i am enjoying the learning journey! This was my very first write-up ever, so i hope i could help :)
