@@ -32,6 +32,7 @@ def arrowleft():
     for i in range(0, len(stackarr)):
       stackarr[len(stackarr)-i-1] = stackarr[len(stackarr)-i-2]
     stackarr[0] = k
+    
 def atsign():
     last = stackarr[len(stackarr)-1]
     stackarr[len(stackarr) - 1] = stackarr[len(stackarr) - 2]
