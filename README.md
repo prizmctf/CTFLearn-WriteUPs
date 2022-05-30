@@ -3,4 +3,4 @@
 
 ## Categories:
 
-### [1. Programming](https://github.com/prizmctf/CTFLearn-Writeups/Programming)
+### [1. Programming](Programming/)
